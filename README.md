@@ -1,5 +1,6 @@
 # QuillCraft Website Repository
 
+
 This repository is home to the codebase for the QuillCraft Minecraft server website. It's a work in progress, and its purpose is to support the development of the V2 of our website. Please keep in mind that this README isn't a literary masterpiece; it's a simple guide to help us collaborate effectively on this project.
 
 ## Purpose and Workflow
