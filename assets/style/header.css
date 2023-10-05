@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 118px;
+    background-color: rgba(13, 24, 33, 0.90);
+    align-items: center;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+header a {
+    display: contents;
+}
+header img.logo {
+    height: 98%;
+    /* margin-inline: 240px; */
+}
