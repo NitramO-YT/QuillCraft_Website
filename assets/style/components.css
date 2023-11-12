@@ -1,0 +1,62 @@
+button {
+    --text-color: #FFF;
+
+    --background-color-static: rgba(50, 67, 82, 0.60);
+    --background-color-hover: rgba(137, 143, 164, 0.60);
+    --background-color-active: var(--background-color-hover);
+
+    --background-color: var(--background-color-static);
+
+    --border: none;
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    border: var(--border);
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+    text-align: center;
+    font-family: Arial;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+}
+button:hover {
+    --background-color: var(--background-color-hover);
+}
+button:focus-visible {
+    --background-color: var(--background-color-hover);
+}
+button:active {
+    --background-color: var(--background-color-active);
+}
+
+button.nav-link {
+    --background-color-static: transparent;
+    --background-color-hover: rgba(137, 143, 164, 0.60);
+    --background-color-selected: rgba(50, 67, 82, 0.60);
+}
+button.nav-link[selected] {
+    --background-color: var(--background-color-selected);
+}
+
+button.cta {
+    --text-color: #3A95E9;
+    --background-color-static: #898fa44d;
+    --background-color-hover: #3C5C79;
+    --background-color-active: #62819C;
+    --border: 1px solid #51576B;
+}
+
+button.cta:hover {
+    --border: 1px solid var(--background-color);
+}
+button.cta:active {
+    --border: 1px solid var(--background-color);
+}
