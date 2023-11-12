@@ -1,0 +1,174 @@
+/*─────────────────────────────────*\
+|                                   |
+|     ASIDE SOCIAL NETWORK PART     |
+|                                   |
+\*─────────────────────────────────*/
+
+div.aside div.asideSocialNetworkBar {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+    padding-block: 25px;
+}
+div.aside div.asideSocialNetworkBar:hover div.socialNetworkCard {
+    transform: translateX(0);
+}
+
+div.aside div.asideSocialNetworkBar a {
+    text-decoration: none;
+}
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 70px;
+    border-radius: 17px;
+
+    font-size: 0.85em;
+    font-family: sans-serif;
+    --text-color-networkName: #FFF;
+    --text-color-idName: #4A5168;
+    --color-networkMain: rgba(128, 128, 128, 0.3);
+    --color-networkBackground: rgba(217, 217, 217, 0.15);
+    font-weight: bold;
+
+    transform: translateX(40%);
+    
+    transition: all 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard:hover {
+    background-color: var(--color-networkBackground);
+}
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard div.logo {
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 1/1;
+    border-radius: 100em;
+    background-color: var(--color-networkMain);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard div.logo::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: var(--network-icon-svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    /* background-color: var(--color-networkMain); */
+}
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard div.info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-shrink: 1;
+    height: 100%;
+    gap: 5px;
+
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+div.aside div.asideSocialNetworkBar:hover div.socialNetworkCard div.info {
+    opacity: 1;
+}
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard div.info div.networkName {
+    color: var(--text-color-networkName);
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard div.info div.idName {
+    color: var(--text-color-idName);
+}
+
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.discord div.logo {
+    --color-networkMain: rgba(88, 101, 242, 0.3);
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.twitter div.logo {
+    --color-networkMain: rgba(29, 161, 242, 0.3);
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.youtube div.logo {
+    --color-networkMain: rgba(255, 0, 0, 0.3);
+}
+
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.discord div.logo::before {
+    --network-icon-svg: url('../images/svg/discord.svg');
+
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.twitter div.logo::before {
+    --network-icon-svg: url('../images/svg/twitter.svg');
+
+}
+div.aside div.asideSocialNetworkBar div.socialNetworkCard.youtube div.logo::before {
+    --network-icon-svg: url('../images/svg/youtube.svg');
+}
+
+/*────────────────────────────────────────*\
+|                                          |
+|     END OF ASIDE SOCIAL NETWORK PART     |
+|                                          |
+\*────────────────────────────────────────*/
+
+
+
+
+
+/*──────────────────────────────*\
+|                                |
+|     ASIDE BACK TO TOP PART     |
+|                                |
+\*──────────────────────────────*/
+
+div.aside button.backToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #324352;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+div.aside button.backToTop::before {
+    content: "^";
+    width: 30px;
+    height: 30px;
+    color: #898FA480;
+    font-size: 2.8em;
+}
+
+div.aside button.backToTop:hover::before {
+    content: "↑";
+    line-height: 30px;
+}
+
+/*─────────────────────────────────*\
+|                                   |
+|     END OF ASIDE BACK TO PART     |
+|                                   |
+\*─────────────────────────────────*/
