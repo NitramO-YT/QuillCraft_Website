@@ -60,3 +60,7 @@ button.cta:hover {
 button.cta:active {
     --border: 1px solid var(--background-color);
 }
+
+button.rounded {
+    border-radius: 100rem;
+}
