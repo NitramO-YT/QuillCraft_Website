@@ -50,10 +50,12 @@
     <meta name="theme-color" content="#b5832b">
     
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/animations.css">
     <link rel="stylesheet" href="./assets/style/header.css">
     <link rel="stylesheet" href="./assets/style/components.css">
     <link rel="stylesheet" href="./assets/style/background.css">
     <link rel="stylesheet" href="./assets/style/aside.css">
+    <link rel="stylesheet" href="./assets/style/cookiesPopup.css">
 </head>
 <body>
     <header>
@@ -78,9 +80,11 @@
             <a href="#" tabindex="-1"><button class="nav-link cta">CONNEXION</button></a>
         </nav>
     </header>
+
     <div class="customBackground">
         <span class="gradient"></span>
     </div>
+    
     <div class="aside">
         <div class="asideSocialNetworkBar">
             <a href="https://discord.gg/x7PqXhc" target="_blank">
@@ -114,5 +118,39 @@
 
         <button class="backToTop" id="backToTopButton"></button>
     </div>
+ 
+    <div class="popupCookies">
+        <div class="header">
+            <a href="#"><img
+            src="./assets/images/brand/logo/quillcraft.png"
+            srcset="./assets/images/brand/logo/quillcraft_270.png 270,
+                    ./assets/images/brand/logo/quillcraft_540.png 540,
+                    ./assets/images/brand/logo/quillcraft_1080.png 1080,
+                    ./assets/images/brand/logo/quillcraft_2160.png 2160"
+            sizes="(max-height: 320px) 270px,
+                (max-height: 480px) 540px,
+                (max-height: 800px) 1080px,
+                2160px"
+            alt="Logo de QuillCraft" class="logo" loading="lazy" decoding="async" /></a>
+            <button class="login cta rounded">CONNEXION</button>
+        </div>
+        <div class="body">
+            <h3 class="title">Avant d'accéder à QuillCraft</h3>
+            <p class="text">Nous utilisons des cookies pour les fonctionnalités suivantes :</p>
+            <ul class="list">
+                <li class="listItem">🛡️ Aucune récolte, partage ou revente de données personnelles</li>
+                <li class="listItem">📈 Statistiques de visites</li>
+                <li class="listItem">⚙️ Enregistrement de vos préférences fonctionnelles (langue, thème, etc.)</li>
+            </ul>
+            <p class="text">Si vous cliquez sur “Tout accepter”, cela signifie que vous acceptez que nous utilisons les cookies comme indiqué précédemment.</p>
+            <p class="text">Au contraire, si vous cliquez sur “Tout refuser”, cela signifie que vous n’acceptez pas que nous utilisons les cookies comme indiqué précédemment.</p>
+            <p class="text italic">QuillCraft n'utilise aucun tracker ou publicité dissimulée.</p>
+        </div>
+        <div class="footer">
+            <button class="choice rounded" id="popupCookiesRefuse">Tout refuser</button>
+            <button class="choice rounded" id="popupCookiesAccept">Tout accepter</button>
+        </div>
+    </div>
+    <script src="./assets/scripts/cookies.js" type="text/javascript"></script>
 </body>
 </html>
