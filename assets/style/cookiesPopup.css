@@ -1,4 +1,4 @@
-div.popupCookies {
+div.cookiesPopupContainer {
     position: fixed;
     inset: 0;
     margin: auto;
@@ -22,7 +22,7 @@ div.popupCookies {
     transition: all 0.5s ease;
 }
 
-div.popupCookies div.header {
+div.cookiesPopupContainer div.header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -31,16 +31,16 @@ div.popupCookies div.header {
     padding: 0 0.5rem;
     box-sizing: border-box;
 }
-div.popupCookies div.header a {
+div.cookiesPopupContainer div.header a {
     display: contents;
 }
-div.popupCookies div.header img.logo {
+div.cookiesPopupContainer div.header img.logo {
     height: 100%;
     object-fit: contain;
     cursor: pointer;
 }
 
-div.popupCookies div.body {
+div.cookiesPopupContainer div.body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -51,29 +51,29 @@ div.popupCookies div.body {
     box-sizing: border-box;
     overflow-y: auto;
 }
-div.popupCookies div.body h3.title {
+div.cookiesPopupContainer div.body h3.title {
     font-size: 1.5rem;
     font-weight: 700;
     margin: auto;
     margin-bottom: 2rem;
 }
-div.popupCookies div.body p.text {
+div.cookiesPopupContainer div.body p.text {
     font-size: 1rem;
     font-weight: 400;
 }
-div.popupCookies div.body p.text.italic {
+div.cookiesPopupContainer div.body p.text.italic {
     font-style: italic;
 }
-div.popupCookies div.body ul.list {
+div.cookiesPopupContainer div.body ul.list {
     list-style: none;
 }
-div.popupCookies div.body ul.list li.listItem {
+div.cookiesPopupContainer div.body ul.list li.listItem {
     font-size: 1rem;
     font-weight: 400;
     margin: 0.5rem 0;
 }
 
-div.popupCookies div.footer {
+div.cookiesPopupContainer div.footer {
     width: 100%;
     height: 80px;
     display: flex;
@@ -83,15 +83,15 @@ div.popupCookies div.footer {
     gap: 2rem;
     box-sizing: border-box;
 }
-div.popupCookies div.footer button.choice {
+div.cookiesPopupContainer div.footer button.choice {
     background-color: #F4F4F4;
     color: #0D1821;
     font-size: 1rem;
     font-weight: 600;
 }
-div.popupCookies div.footer button.choice:hover {
+div.cookiesPopupContainer div.footer button.choice:hover {
     background-color: #DEDEDE;
 }
-div.popupCookies div.footer button.choice:active {
+div.cookiesPopupContainer div.footer button.choice:active {
     background-color: #CFCFCF;
 }
