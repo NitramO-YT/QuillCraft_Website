@@ -1,4 +1,4 @@
-const popupCookies = document.querySelector('div.popupCookies');
+const popupCookies = document.querySelector('div.cookiesPopupContainer');
 const popupCookiesAccept = document.querySelector('#popupCookiesAccept');
 const popupCookiesRefuse = document.querySelector('#popupCookiesRefuse');
 
