@@ -149,22 +149,44 @@ div.aside button.backToTop {
     border-radius: 10px;
     background-color: #324352;
     border: none;
-    outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-div.aside button.backToTop::before {
-    content: "^";
-    width: 30px;
-    height: 30px;
-    color: #898FA480;
-    font-size: 2.8em;
+div.aside button.backToTop span.buttonArrow {
+    --arrow-width: 3px;
+    --arrow-color: #898FA4;
+    width: var(--arrow-width);
+    height: 0px;
+    background-color: var(--arrow-color);
+    border-radius: 100rem;
+    opacity: 0.5;
+    position: relative;
+    margin-bottom: 10px;
+    transition: 0.25s ease-in-out;
 }
 
-div.aside button.backToTop:hover::before {
-    content: "↑";
-    line-height: 30px;
+div.aside button.backToTop:is(:hover, :focus-visible) span.buttonArrow {
+    height: 35px;
+    margin-bottom: 0;
+}
+
+div.aside button.backToTop span.buttonArrow::before,
+div.aside button.backToTop span.buttonArrow::after {
+    content: '';
+    display: block;
+    width: var(--arrow-width);
+    height: 15px;
+    background-color: var(--arrow-color);
+    border-radius: 100rem;
+    transform-origin: top;
+    position: absolute;
+}
+div.aside button.backToTop span.buttonArrow::before {
+    transform: translateX(35%) rotate(45deg);
+}
+div.aside button.backToTop span.buttonArrow::after {
+    transform: translateX(-35%) rotate(-45deg);
 }
 
 /*─────────────────────────────────*\
